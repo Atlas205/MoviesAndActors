@@ -69,5 +69,30 @@ namespace MoviesAndActors
         {
             return Movies.Where(m => m.Title.Contains(search));
         }
+
+        public IEnumerable<Movie> GetAllInCategory(string category)
+        {
+            return Movies.Where((m) => m.Category.Contains(category));
+        }
+
+        public IEnumerable<Movie> NumInCategory(int numincat)
+        {
+            return Movies.
+        }
+
+        public IEnumerable<Movie> MoviesInBudget(string budget)
+        {
+            return Movies.
+        }
+
+        public IEnumerable<Movie> MoviesIn90s(int year)
+        {
+
+        }
+
+        public IEnumerable<Movie> CalculateRatings(List<Rating> rating)
+        {
+
+        }
     }
 }

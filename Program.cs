@@ -7,3 +7,8 @@ foreach (Movie m in repo.GetMovieInfo("Wars"))
 {
     Console.WriteLine(m.Title);
 }
+
+foreach(Movie m in repo.GetAllInCategory("horror"))// create categories
+{
+    Console.WriteLine(m.Category);
+}
